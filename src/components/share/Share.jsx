@@ -1,5 +1,5 @@
 import "./share.scss";
-import { PermMedia } from "@mui/icons-material"
+import { PermMedia, Label, Room, EmojiEmotions } from "@mui/icons-material"
 
 export default function Share() {
   return (
@@ -8,7 +8,7 @@ export default function Share() {
             <div className="shareTop">
                 <img src="/assets/person/homme2.jpg" alt="Man looking at a window" className="shareProfileImg" />
                 <input 
-                    placeholder="I'd love to play tennis like Roger!" 
+                    placeholder="Write here whatever you want..." 
                     className="shareInput" 
                 />
             </div>
@@ -16,10 +16,23 @@ export default function Share() {
             <div className="shareBottom">
                 <div className="shareOptions">
                     <div className="shareOption">
-                        <PermMedia className="shareIcon"/>
+                        <PermMedia htmlColor="tomato" className="shareIcon"/>
                         <span className="shareOptionText">Photo or Video</span>
                     </div>
+                    <div className="shareOption">
+                        <Label htmlColor="blue" className="shareIcon"/>
+                        <span className="shareOptionText">Tag</span>
+                    </div>
+                    <div className="shareOption">
+                        <Room htmlColor="green" className="shareIcon"/>
+                        <span className="shareOptionText">Location</span>
+                    </div>
+                    <div className="shareOption">
+                        <EmojiEmotions htmlColor="goldenrod" className="shareIcon"/>
+                        <span className="shareOptionText">Feelings</span>
+                    </div>
                 </div>
+                <button className="shareButton">Share</button>
             </div>
         </div>
     </div>
